@@ -1,0 +1,7 @@
+node_modules/
+OfflineChatbot-win32-x64/
+__pycache__/
+*.pyc
+*.log
+.env
+.DS_Store

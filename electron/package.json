@@ -1,0 +1,14 @@
+{
+  "name": "offline-chatbot",
+  "version": "1.0.0",
+  "description": "Offline Personal Chatbot Desktop App",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "package": "electron-packager . OfflineChatbot --platform=win32 --arch=x64 --icon=chatbot.ico --overwrite"
+  },
+  "devDependencies": {
+    "electron": "^29.0.0",
+    "electron-packager": "^17.1.1"
+  }
+}

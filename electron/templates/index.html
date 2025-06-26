@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Livi. AI 🧠 Offline Chat</title>
+  <link rel="stylesheet" href="/static/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="app-container">
+    <!-- Header -->
+    <header class="top-header">
+      <div class="header-content">
+        <div class="logo-section">
+          <span class="logo-icon"></span>
+          <h1> 🧠 Livi. AI</h1>
+        </div>
+        <div class="status-badge">
+          <span class="status-dot"></span>
+          Offline & Private
+        </div>
+      </div>
+    </header>
+
+    <!-- Main Chat Area -->
+    <main class="chat-main">
+      <div class="chat-container">
+        <div id="chat-messages">
+          <div class="welcome-screen">
+            <div class="welcome-content">
+              <div class="welcome-icon"></div>
+              <h2>Welcome to Livi. AI 🧠</h2>
+              <p>Your private, offline AI assistant. Start a conversation by typing a message below.</p>
+              <div class="feature-badges">
+                <span class="badge">🔒 Private</span>
+                <span class="badge">📱 Offline</span>
+                <span class="badge">⚡ Fast</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Typing Indicator -->
+        <div id="typing-indicator" style="display: none;">
+          <div class="message-container bot">
+            <div class="message-avatar">
+              <span></span>
+            </div>
+            <div class="message-content">
+              <div class="typing-bubble">
+                <div class="typing-text">
+                  <span>Livi. AI is typing</span>
+                  <div class="typing-dots">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- Input Area -->
+    <footer class="input-footer">
+      <div class="input-wrapper">
+        <div class="input-container">
+          <textarea id="user-input" placeholder="Message Livi. AI..." rows="1"></textarea>
+          <button onclick="sendMessage()" id="send-btn">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="m22 2-7 20-4-9-9-4z"/>
+              <path d="M22 2 11 13"/>
+            </svg>
+          </button>
+        </div>
+        <div class="input-footer-text">
+          Livi. AI can make mistakes. Consider checking important information.
+        </div>
+      </div>
+    </footer>
+  </div>
+
+  <script src="/static/script.js"></script>
+</body>
+</html>
